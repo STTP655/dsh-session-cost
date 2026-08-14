@@ -1,0 +1,8 @@
+# dsh-session-cost bundle patch: insert the cost-chip row into the profile.
+# The row is both a host entry (lib/index.js) and a browser-roster client
+# module (lib/client.js via the dsh.client manifest). The client face reads
+# the `tokenUsage` projection and renders the estimate in the composer dock
+# (the stats strip at the bottom of the session).
+- insert:
+    - id: session-cost
+      name: dsh-session-cost
