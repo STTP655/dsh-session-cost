@@ -4,6 +4,8 @@ DSH（DeepSeek Harness）插件：在 Web GUI 底部统计条里显示**当前�
 
 效果：统计条末尾多出一项 `费用 ≈¥0.35`，悬停可见明细（缓存命中 / 未命中 / 输出 三部分费用）。
 
+![效果截图](docs/screenshot.png)
+
 ## 安装
 
 ```bash
