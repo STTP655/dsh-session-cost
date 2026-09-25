@@ -8,11 +8,13 @@
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
     "./package.json": "./package.json"
   },
   "files": [
     "lib",
     "cordis.patch.yml",
+    "locale",
     "README.md",
     "docs"
   ],
