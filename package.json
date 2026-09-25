@@ -1,7 +1,7 @@
 {
   "name": "dsh-session-cost",
   "version": "0.1.3-custom.1",
-  "description": "DSH 插件：在 Web GUI 统计条显示当前会话的 DeepSeek API 费用估算（token 用量 × 官方价格，含峰谷时段）",
+  "description": "显示当前会话的 DeepSeek API 费用估算：底部统计条给出费用与当前峰谷档位（峰价红 / 谷价绿），会话标题旁的「费用」按钮打开详情面板——24 小时柱状图、逐小时明细与按天归档；费用按峰谷分时段记账，内置 2026 年法定节假日。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

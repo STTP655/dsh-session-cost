@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Session cost",
-    "description": "Shows the estimated DeepSeek API cost of the current session in the Web GUI stats strip (token usage × official pricing, peak/off-peak and public holidays aware)."
+    "description": "Shows the estimated DeepSeek API cost of the current session: the stats strip gives the cost and the current peak/off-peak rate (red for peak, green for off-peak), and a \"Cost\" entry beside the session title opens a breakdown panel with a 24-hour bar chart, hourly rows, and a per-day archive. Cost is booked per pricing tier, with the 2026 Chinese public holidays built in."
   }
 }
