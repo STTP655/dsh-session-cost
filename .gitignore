@@ -1,0 +1,14 @@
+# dependencies (local dev junction into the DSH profile — never commit)
+node_modules/
+
+# npm artifacts
+*.tgz
+.npmrc
+
+# launcher runtime files (macOS/Linux background server)
+dsh-web.log
+dsh-web.pid
+
+# OS noise
+.DS_Store
+Thumbs.db
