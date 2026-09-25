@@ -66,7 +66,7 @@ DSH（DeepSeek Harness）插件：显示**当前会话的 DeepSeek API 费用估
 
 ## 详情面板
 
-会话头部右侧工具区（`conversation.session.header.utilities`）的「费用」按钮，用 DSH 原生 `Modal`（`@deepseek-ai/dsh-client-ui-primitives`）弹出：毛玻璃遮罩、Escape 与点遮罩均可关闭。
+会话标题旁（`conversation.session.header.actions`）的「费用」按钮，用 DSH 原生 `Modal`（`@deepseek-ai/dsh-client-ui-primitives`）弹出：毛玻璃遮罩、Escape 与点遮罩均可关闭。
 
 表格按小时**倒序**（最近的在最上面）：
 
@@ -79,7 +79,7 @@ DSH（DeepSeek Harness）插件：显示**当前会话的 DeepSeek API 费用估
 
 - **保留最近 7 天**，更早的小时桶在每次采样时丢弃
 - 「跨档」标记实际不会出现：时段边界都在整点，一个小时必然只属于一个档位；该分支保留作为防御
-- **为什么不用 `conversation.session.header.corner`**：那是 `single` 座位，右侧边栏的展开按钮占着它（面板收起时它才渲染内容），注册过去会把那个按钮顶掉；`utilities` 声明为 `list`，可多个共存
+- **座位选择**：入口挂在 `conversation.session.header.actions`（标题旁，`list` 类型）。`corner` 是 `single` 座位、被右侧边栏的展开按钮占着（面板收起时它才渲染内容），注册过去会把那个按钮顶掉；`utilities` 是 header 右端（打开本地目录、侧边栏按钮那一排），按钮会落到右上角而不是标题旁
 
 ## 说明与限制
 
